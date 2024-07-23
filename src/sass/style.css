@@ -367,10 +367,8 @@ footer .copyright .container .social i {
   flex-direction: row;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide {
-  display: flex;
-  box-sizing: border-box;
   margin-bottom: 30px;
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide .text {
   position: absolute;
