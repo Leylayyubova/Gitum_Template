@@ -169,6 +169,64 @@
     }
 }
 
+.unlimited {
+    padding-top: 90px;
+    padding-bottom: 95px;
+
+    .Personal {
+        max-width: 1170px;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 45px;
+            color: #111111;
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            flex-direction: row;
+
+            .swiper-slide {
+                display: flex;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+                margin-top: 0;
+
+                .text {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 95%;
+                    background: rgba(0, 0, 0, 0.4);
+                    padding-left: 30px;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+
+                    h4 {
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #ffffff;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        i {
+                            color: #e85d39;
+                            margin-right: 4px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
 .expert {
     background: #f5f5f5;
     padding-top: 90px;
@@ -210,6 +268,7 @@
                     // transform: translateX(-50%);
                     transform: translateX(-155px);
                     transform-origin: bottom center;
+
                     h5 {
                         font-size: 20px;
                         color: #111111;
@@ -250,12 +309,11 @@
                 }
 
                 &:hover .text {
-                    bottom: -20px;
-                    height: auto;
+                    bottom: -100px;
+                    height: 250px;
 
                     p {
                         opacity: 1;
-                        // transition-delay: 0.2s;
                     }
 
                     .social {

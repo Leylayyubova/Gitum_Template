@@ -347,6 +347,55 @@ footer .copyright .container .social i {
   margin: 0 0 15px 0;
 }
 
+.unlimited {
+  padding-top: 90px;
+  padding-bottom: 95px;
+}
+.unlimited .Personal {
+  max-width: 1170px;
+}
+.unlimited .Personal h2 {
+  text-align: center;
+  margin-bottom: 45px;
+  color: #111111;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.unlimited .Personal .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.unlimited .Personal .swiper-wrapper .swiper-slide {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.unlimited .Personal .swiper-wrapper .swiper-slide .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 95%;
+  background: rgba(0, 0, 0, 0.4);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.unlimited .Personal .swiper-wrapper .swiper-slide .text h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.unlimited .Personal .swiper-wrapper .swiper-slide .text span {
+  font-size: 14px;
+  color: #ffffff;
+}
+.unlimited .Personal .swiper-wrapper .swiper-slide .text span i {
+  color: #e85d39;
+  margin-right: 4px;
+}
+
 .expert {
   background: #f5f5f5;
   padding-top: 90px;
@@ -419,8 +468,8 @@ footer .copyright .container .social i {
   transition: all 0.3s;
 }
 .expert .container .cards .card:hover .text {
-  bottom: -20px;
-  height: auto;
+  bottom: -100px;
+  height: 250px;
 }
 .expert .container .cards .card:hover .text p {
   opacity: 1;
