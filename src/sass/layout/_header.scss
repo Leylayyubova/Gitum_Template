@@ -1,0 +1,85 @@
+.gutim {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #4c4c4c;
+        padding: 5px;
+
+        .logo {
+            a {
+                display: inline-block;
+                padding: 24px 0 29px;
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: flex;
+
+                li {
+                    margin-right: 27px;
+                    position: relative;
+
+                    a {
+                        font-size: 16px;
+                        color: #ffffff;
+                        font-weight: 600;
+                        padding: 28px 0;
+
+                        &:hover::after {
+                            width: 100%;
+                            opacity: 1;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -4px;
+                            width: 0%;
+                            height: 2px;
+                            background: #f15d44;
+                            opacity: 0;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+
+                .btn {
+                    margin: 16px 0px 16px 30px;
+                }
+            }
+
+            .btn {
+                padding: 16px 0px 16px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 0 12px;
+                color: #ffffff;
+                text-align: center;
+                width: 160px;
+                height: 46px;
+                border-left: 2px solid #eb3c5a;
+                border-right: 2px solid #f67831;
+                background-color: transparent;
+                transition-duration: 1000ms;
+                line-height: 45px;
+                background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+                background-position: 0 0, 0 100%;
+                background-repeat: no-repeat;
+                background-size: 100% 2px;
+            }
+        }
+    }
+}
