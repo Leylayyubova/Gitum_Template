@@ -29,13 +29,11 @@ a {
   width: 100%;
 }
 .gutim .container {
-  max-width: 1170px;
-  margin: 0 auto;
+  max-width: 1140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #4c4c4c;
-  padding: 5px;
 }
 .gutim .container .logo a {
   display: inline-block;
@@ -49,13 +47,13 @@ a {
   display: flex;
 }
 .gutim .container .nav-menu .menu li {
-  margin-right: 27px;
   position: relative;
+  margin-right: 33px;
 }
 .gutim .container .nav-menu .menu li a {
   font-size: 16px;
-  color: #ffffff;
   font-weight: 600;
+  color: #ffffff;
   padding: 28px 0;
 }
 .gutim .container .nav-menu .menu li a:hover::after {
@@ -70,26 +68,25 @@ a {
   width: 0%;
   height: 2px;
   background: #f15d44;
-  opacity: 0;
   transition: all 0.3s;
+  opacity: 0;
 }
 .gutim .container .nav-menu .menu .btn {
   margin: 16px 0px 16px 30px;
 }
 .gutim .container .nav-menu .btn {
-  padding: 16px 0px 16px 30px;
   font-size: 16px;
   font-weight: 600;
+  line-height: 45px;
   padding: 0 12px;
   color: #ffffff;
   text-align: center;
+  margin: 16px 0px 16px 30px;
   width: 160px;
-  height: 46px;
   border-left: 2px solid #eb3c5a;
   border-right: 2px solid #f67831;
   background-color: transparent;
   transition-duration: 1000ms;
-  line-height: 45px;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
@@ -100,13 +97,12 @@ footer {
   background: #111111;
   padding-top: 60px;
   padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 footer .information .container {
   display: flex;
   justify-content: space-between;
-}
-footer .information .container .contact {
-  padding: 0 15px;
 }
 footer .information .container .contact span {
   font-size: 14px;
@@ -154,6 +150,7 @@ footer .subscribe .container form input {
   color: #bdbdbd;
   border: 1px solid #ffffff;
   padding-left: 22px;
+  outline: none;
 }
 footer .subscribe .container form button {
   font-size: 18px;
@@ -214,32 +211,32 @@ footer .copyright .container .social i {
 }
 .hero .container .content span {
   font-size: 14px;
+  font-weight: 600;
   color: #f15d44;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 600;
 }
 .hero .container .content h1 {
   font-size: 72px;
-  color: #ffffff;
   font-weight: 600;
-  margin-top: 11px;
-  margin-bottom: 18px;
+  color: #ffffff;
+  margin: 11px 0 18px 0;
 }
 .hero .container .content p {
   font-size: 16px;
-  color: #fff;
   font-weight: 400;
   line-height: 26px;
+  color: #fff;
   margin-bottom: 44px;
 }
 .hero .container .content a {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
+  line-height: 45px;
+  text-align: center;
   padding: 0 12px;
   color: #ffffff;
-  text-align: center;
   width: 160px;
   height: 46px;
   border-left: 2px solid #eb3c5a;
@@ -248,19 +245,20 @@ footer .copyright .container .social i {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   transition-duration: 1000ms;
-  line-height: 45px;
 }
 
 .story {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0 100px 0;
 }
 .story .container {
   display: flex;
-  padding: 0 15px;
 }
 .story .container .video {
   position: relative;
+  padding: 0 15px;
+}
+.story .container .video img {
+  max-width: 555px;
 }
 .story .container .video a {
   position: absolute;
@@ -269,18 +267,16 @@ footer .copyright .container .social i {
   transform: translate(-41.5px, -41.5px);
 }
 .story .container .content {
-  padding-top: 15px;
-  padding-left: 55px;
+  padding: 15px 0 0 55px;
 }
 .story .container .content h2 {
   font-size: 40px;
+  font-weight: 700;
   color: #111111;
   text-transform: uppercase;
-  font-weight: 700;
   margin-bottom: 25px;
 }
 .story .container .content p {
-  margin-bottom: 10px;
   color: #6b6b6b;
   font-weight: 400;
   line-height: 26px;
@@ -293,9 +289,10 @@ footer .copyright .container .social i {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  padding: 0 12px;
   color: #ffffff;
   text-align: center;
+  line-height: 45px;
+  padding: 0 12px;
   width: 160px;
   height: 46px;
   border-left: 2px solid #eb3c5a;
@@ -304,7 +301,18 @@ footer .copyright .container .social i {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   transition-duration: 1000ms;
-  line-height: 45px;
+}
+.story .container .content img {
+  margin-bottom: 20px;
+}
+.story .container .content .author h4 {
+  font-size: 22px;
+  color: #111111;
+  font-weight: 600;
+}
+.story .container .content .author span {
+  font-size: 12px;
+  color: #f15d44;
 }
 
 .strategies .container {
@@ -325,60 +333,58 @@ footer .copyright .container .social i {
   width: calc(100% - 711px);
 }
 .strategies .container .boxes .box {
+  padding: 66px 45px 0 70px;
   background-color: #000;
   width: 50%;
-  padding-left: 70px;
-  padding-right: 45px;
-  padding-top: 100px;
   height: 330px;
 }
 .strategies .container .boxes .box h4 {
   font-size: 22px;
-  color: #ffffff;
   font-weight: 600;
-  margin-top: 36px;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin: 34px 0 20px 0;
 }
 .strategies .container .boxes .box p {
-  color: #bdbdbd;
   font-size: 16px;
   font-weight: 400;
+  color: #bdbdbd;
   line-height: 26px;
   margin: 0 0 15px 0;
 }
 
 .unlimited {
-  padding-top: 90px;
-  padding-bottom: 95px;
+  padding: 90px 0 95px 0;
 }
 .unlimited .Personal {
   max-width: 1170px;
 }
 .unlimited .Personal h2 {
-  text-align: center;
-  margin-bottom: 45px;
-  color: #111111;
   font-size: 40px;
   font-weight: 600;
+  text-align: center;
+  color: #111111;
   text-transform: uppercase;
+  margin-bottom: 45px;
 }
 .unlimited .Personal .swiper-wrapper {
   display: flex;
   flex-direction: row;
+  padding: 0 20px;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide {
   margin-bottom: 30px;
   margin-top: 0 !important;
 }
+.unlimited .Personal .swiper-wrapper .swiper-slide img {
+  width: 350px;
+}
 .unlimited .Personal .swiper-wrapper .swiper-slide .text {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 6px;
   width: 95%;
   background: rgba(0, 0, 0, 0.4);
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 10px 0 15px 30px;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide .text h4 {
   font-size: 22px;
@@ -396,26 +402,25 @@ footer .copyright .container .social i {
 
 .expert {
   background: #f5f5f5;
-  padding-top: 90px;
-  padding-bottom: 190px;
+  padding: 90px 0 190px 0;
 }
 .expert .container {
   padding: 0 15px;
 }
 .expert .container h2 {
-  color: #111111;
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  color: #111111;
   margin-bottom: 45px;
 }
 .expert .container .cards {
   display: flex;
 }
 .expert .container .cards .card {
-  width: 33%;
   position: relative;
+  width: 33%;
   margin: 0 15px;
 }
 .expert .container .cards .card .text {
@@ -425,19 +430,19 @@ footer .copyright .container .social i {
   text-align: center;
   background: #ffffff;
   width: 310px;
+  height: 90px;
+  padding: 20px 30px 18px;
   margin: 0 auto;
   transition: all 0.5s;
   overflow: hidden;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 20px 30px 18px;
-  height: 90px;
   transform: translateX(-155px);
   transform-origin: bottom center;
 }
 .expert .container .cards .card .text h5 {
   font-size: 20px;
-  color: #111111;
   font-weight: 600;
+  color: #111111;
   margin-bottom: 4px;
 }
 .expert .container .cards .card .text span {
@@ -445,14 +450,13 @@ footer .copyright .container .social i {
   color: #f15d44;
 }
 .expert .container .cards .card .text p {
-  margin-top: 7px;
-  opacity: 0;
-  transition: all 0.3s;
   font-size: 16px;
   color: #6b6b6b;
   font-weight: 400;
   line-height: 26px;
-  margin: 0 0 15px 0;
+  opacity: 0;
+  transition: all 0.3s;
+  margin: 7px 0 15px 0;
 }
 .expert .container .cards .card .text .social {
   opacity: 0;
@@ -462,11 +466,11 @@ footer .copyright .container .social i {
 .expert .container .cards .card .text .social a {
   font-size: 17px;
   color: #111111;
-  margin-right: 25px;
+  margin: 0 12px;
   transition: all 0.3s;
 }
 .expert .container .cards .card:hover .text {
-  bottom: -100px;
+  bottom: -90px;
   height: 250px;
 }
 .expert .container .cards .card:hover .text p {
@@ -478,17 +482,16 @@ footer .copyright .container .social i {
 }
 
 .success {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 60px 0 100px 0;
 }
 .success .mySwiper {
   max-width: 1170px;
   position: relative;
 }
 .success .mySwiper h2 {
-  color: #111111;
   font-size: 40px;
   font-weight: 600;
+  color: #111111;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 35px;
@@ -506,16 +509,16 @@ footer .copyright .container .social i {
 }
 .success .mySwiper .swiper-wrapper .swiper-slide p {
   font-size: 22px;
+  text-align: center;
   color: #111111;
   line-height: 30px;
   margin-bottom: 60px;
-  text-align: center;
 }
 .success .mySwiper .swiper-wrapper .swiper-slide .pics {
+  position: relative;
   width: 120px;
   height: 120px;
   margin: 0 auto;
-  position: relative;
   z-index: 1;
 }
 .success .mySwiper .swiper-wrapper .swiper-slide .pics img {
@@ -548,8 +551,8 @@ footer .copyright .container .social i {
   font-size: 16px;
   color: #f15d44;
 }
-.success .mySwiper .swiper-wrapper .swiper-button-next::after,
-.success .mySwiper .swiper-wrapper .swiper-button-prev::after {
+.success .mySwiper .swiper-button-next::after,
+.success .mySwiper .swiper-button-prev::after {
   color: #bdbdbd;
   font-size: 26px;
 }
@@ -566,24 +569,22 @@ footer .copyright .container .social i {
 
 .trainer {
   background-image: url("https://preview.colorlib.com/theme/gutim/img/banner-bg.jpg.webp");
-  padding-top: 65px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  padding-top: 65px;
 }
 .trainer .container {
   display: flex;
 }
 .trainer .container .content {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 145px;
+  padding: 145px 15px 0;
   width: 50%;
 }
 .trainer .container .content h2 {
   font-size: 40px;
-  color: #ffffff;
   font-weight: 600;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -614,18 +615,17 @@ footer .copyright .container .social i {
 }
 .trainer .container .img {
   width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
 }
 
 .membership {
   padding-top: 100px;
 }
 .membership .container h2 {
-  text-align: center;
-  color: #111111;
   font-size: 40px;
   font-weight: 600;
+  text-align: center;
+  color: #111111;
   text-transform: uppercase;
   margin-bottom: 55px;
 }
@@ -633,33 +633,47 @@ footer .copyright .container .social i {
   display: flex;
 }
 .membership .container .boxes .box {
-  width: 33.33%;
   text-align: center;
   background: #ffffff;
+  width: 33.33%;
   box-shadow: 0px 15px 49px rgba(0, 0, 0, 0.15);
   padding-bottom: 50px;
   margin: 0 15px;
 }
 .membership .container .boxes .box h4 {
+  position: relative;
   font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
   background: linear-gradient(to right, #eb3c5a, #f67831);
   padding: 25px 0;
-  position: relative;
   margin-bottom: 38px;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
+}
+.membership .container .boxes .box .triangle {
+  position: relative;
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+}
+.membership .container .boxes .box .triangle::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-15px);
+  left: 50%;
+  bottom: 23px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f67831;
 }
 .membership .container .boxes .box h3 {
   font-size: 40px;
-  color: #f15d44;
   font-weight: 600;
+  color: #f15d44;
   margin-bottom: 24px;
 }
 .membership .container .boxes .box h3 span {
   font-size: 16px;
-  color: #6b6b6b;
   font-weight: 400;
+  color: #6b6b6b;
 }
 .membership .container .boxes .box ul {
   margin-bottom: 27px;
@@ -669,23 +683,23 @@ footer .copyright .container .social i {
   line-height: 36px;
 }
 .membership .container .boxes .box ul li p {
-  color: #6b6b6b;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  color: #6b6b6b;
 }
 .membership .container .boxes .box ul li span {
   color: #111111;
   font-weight: 600;
 }
 .membership .container .boxes .box .btn {
-  color: #111111;
   display: inline-block;
+  color: #111111;
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
   padding: 0 12px;
   background-color: #fff;
-  text-align: center;
   width: 160px;
   height: 46px;
   transition-duration: 1000ms;
@@ -697,7 +711,6 @@ footer .copyright .container .social i {
   background-size: 100% 2px;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   position: relative;
-  color: #000;
   z-index: 0;
 }
 .membership .container .boxes .box .btn::after {
@@ -721,7 +734,7 @@ footer .copyright .container .social i {
 
 .register {
   background: #f5f4f4;
-  padding-top: 235px;
+  padding: 235px 0 100px;
 }
 .register .container {
   display: flex;
@@ -733,17 +746,19 @@ footer .copyright .container .social i {
   width: 66%;
 }
 .register .container .content h2 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 .register .container .content p {
   font-size: 16px;
-  text-align: center;
-  color: #6b6b6b;
   font-weight: 400;
   line-height: 26px;
+  color: #6b6b6b;
+  text-align: center;
   margin: 0 0 47px 0;
 }
 .register .container .content form {
@@ -762,24 +777,24 @@ footer .copyright .container .social i {
 }
 .register .container .content form div input {
   display: block;
+  font-size: 14px;
+  color: #9b9b9b;
+  width: 100%;
   height: 46px;
   border: 1px solid #ebebeb;
   padding-left: 20px;
-  font-size: 14px;
-  color: #9b9b9b;
   margin-bottom: 18px;
-  width: 100%;
   outline: none;
 }
 .register .container .content form button {
   font-size: 16px;
-  color: #ffffff;
   font-weight: 600;
+  color: #ffffff;
   background: linear-gradient(to right, #eb3c5a, #f67831);
   border: none;
   padding: 12px 0;
-  cursor: pointer;
   margin-top: 30px;
+  cursor: pointer;
   width: 100%;
 }
 .register .container .img {
@@ -791,18 +806,18 @@ footer .copyright .container .social i {
 }
 
 .latest {
-  padding-bottom: 50px;
+  padding: 100px 0 90px;
 }
 .latest .container {
   padding: 0 15px;
 }
 .latest .container h2 {
-  text-align: center;
-  margin-bottom: 55px;
-  color: #111111;
   font-size: 40px;
   font-weight: 600;
+  text-align: center;
+  color: #111111;
   text-transform: uppercase;
+  margin-bottom: 55px;
 }
 .latest .container .cards {
   display: flex;
@@ -812,8 +827,8 @@ footer .copyright .container .social i {
   margin: 0 15px;
 }
 .latest .container .cards .card img {
-  margin-bottom: 30px;
   max-width: 360px;
+  margin-bottom: 30px;
 }
 .latest .container .cards .card p {
   font-size: 14px;
@@ -822,40 +837,39 @@ footer .copyright .container .social i {
 .latest .container .cards .card p span {
   display: inline-block;
   font-size: 14px;
-  margin-left: 8px;
   color: #f15d44;
+  margin-left: 8px;
+  cursor: pointer;
 }
 .latest .container .cards .card a {
-  color: #111111;
+  display: block;
   font-size: 24px;
   font-weight: 600;
+  color: #111111;
   line-height: 30px;
   margin-top: 10px;
-  display: block;
 }
 
 .about {
   background-image: url("https://preview.colorlib.com/theme/gutim/img/breadcrumb/classes-breadcrumb.jpg.webp");
-  padding-top: 190px;
-  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  padding-top: 190px;
+  height: 400px;
 }
 .about .container {
   text-align: center;
 }
 .about .container h2 {
   font-size: 60px;
-  color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  color: #ffffff;
 }
 .about .container a {
   font-size: 16px;
   color: #ffffff;
-  display: inline-block;
 }
 .about .container a i {
   font-size: 12px;
@@ -863,7 +877,6 @@ footer .copyright .container .social i {
 .about .container span {
   font-size: 16px;
   color: #bdbdbd;
-  display: inline-block;
 }
 
 .counter .container {
@@ -877,22 +890,21 @@ footer .copyright .container .social i {
 }
 .counter .container .count h2 {
   font-size: 72px;
-  color: #ffffff;
   font-weight: 400;
+  color: #ffffff;
 }
 .counter .container .count p {
+  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0 0 15px 0;
-  font-size: 16px;
   color: #ffffff;
+  margin: 0 0 15px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .award {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0 100px;
 }
 .award .container {
   display: flex;
@@ -909,10 +921,9 @@ footer .copyright .container .social i {
   margin-bottom: 20px;
 }
 .award .container .text p {
-  margin-bottom: 10px;
   font-size: 16px;
-  color: #6b6b6b;
   font-weight: 400;
+  color: #6b6b6b;
   line-height: 26px;
   margin: 0 0 15px 0;
 }
@@ -935,11 +946,9 @@ footer .copyright .container .social i {
 }
 .member .bannerone,
 .member .bannertwo {
-  height: 400px;
   position: relative;
-  padding-top: 85px;
-  padding-left: 60px;
-  padding-right: 60px;
+  height: 400px;
+  padding: 85px 60px 0;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -958,29 +967,27 @@ footer .copyright .container .social i {
   font-size: 40px;
   color: #ffffff;
   font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 5px;
+  margin: 30px 0 5px;
 }
 .member .bannerone p,
 .member .bannertwo p {
-  color: #ffffff;
-  margin-bottom: 42px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  color: #ffffff;
   margin: 0 0 15px 0;
-  font-size: 16px;
 }
 .member .bannerone a,
 .member .bannertwo a {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  padding: 0 12px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
   width: 160px;
   height: 46px;
   line-height: 45px;
+  padding: 0 12px;
   margin-top: 42px;
   border-left: 2px solid #eb3c5a;
   border-right: 2px solid #f67831;
@@ -988,22 +995,24 @@ footer .copyright .container .social i {
 }
 .member .bannerone::after,
 .member .bannertwo::after {
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
   width: 520px;
   height: 310px;
   border: 18px solid rgba(255, 255, 255, 0.1);
-  content: "";
   transform: translate(-260px, -155px);
   z-index: -1;
 }
 
 .classes {
-  padding-bottom: 60px;
-  padding-top: 90px;
+  padding: 90px 0 60px;
 }
 .classes .container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 45px;
 }
@@ -1023,9 +1032,7 @@ footer .copyright .container .social i {
   bottom: 0;
   width: 95%;
   background: rgba(0, 0, 0, 0.4);
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 10px 0 30px 15px;
 }
 .classes .container .cards .card .text h4 {
   font-size: 22px;
@@ -1045,13 +1052,110 @@ footer .copyright .container .social i {
   padding-bottom: 100px;
 }
 .timetable .container h2 {
-  text-align: center;
-  margin-bottom: 45px;
-  color: #111111;
   font-size: 40px;
   font-weight: 600;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 45px;
   text-transform: uppercase;
 }
 .timetable .container ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.timetable .container ul li {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 48px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.timetable .container ul li.active {
+  color: #f15d44;
+}
+.timetable .container table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  border-collapse: collapse;
+  padding: 0 15px;
+  display: none;
+}
+.timetable .container table.active {
+  display: table;
+}
+.timetable .container table thead {
+  border-collapse: collapse;
+}
+.timetable .container table thead tr {
+  background: #f0f0f0;
+}
+.timetable .container table thead tr th {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+.timetable .container table tbody {
+  border-collapse: collapse;
+}
+.timetable .container table tbody tr {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+}
+.timetable .container table tbody tr td {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 146px;
+  background: #ffffff;
+  border-right: 1px solid #e5e5e5;
+  padding: 18px 0;
+  position: relative;
+  z-index: 1;
+  height: 107px;
+  transition: all 0.4s;
+}
+.timetable .container table tbody tr td h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f15d44;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.timetable .container table tbody tr td span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+}
+.timetable .container table tbody tr td .trainer-name {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+.timetable .container table tbody tr .hover-bg {
+  position: relative;
+}
+.timetable .container table tbody tr .hover-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.timetable .container table tbody tr .hover-bg:hover h6, .timetable .container table tbody tr .hover-bg:hover span, .timetable .container table tbody tr .hover-bg:hover .trainer-name {
+  color: #ffffff;
+}
+.timetable .container table tbody tr .hover-bg:hover::after {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

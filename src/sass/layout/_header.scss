@@ -4,14 +4,13 @@
     left: 0;
     top: 0;
     width: 100%;
+
     .container {
-        max-width: 1170px;
-        margin: 0 auto;
+        max-width: 1140px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: #4c4c4c;
-        padding: 5px;
 
         .logo {
             a {
@@ -28,13 +27,13 @@
                 display: flex;
 
                 li {
-                    margin-right: 27px;
                     position: relative;
+                    margin-right: 33px;
 
                     a {
                         font-size: 16px;
-                        color: #ffffff;
                         font-weight: 600;
+                        color: #ffffff;
                         padding: 28px 0;
 
                         &:hover::after {
@@ -50,8 +49,8 @@
                             width: 0%;
                             height: 2px;
                             background: #f15d44;
-                            opacity: 0;
                             transition: all 0.3s;
+                            opacity: 0;
                         }
                     }
                 }
@@ -62,19 +61,18 @@
             }
 
             .btn {
-                padding: 16px 0px 16px 30px;
                 font-size: 16px;
                 font-weight: 600;
+                line-height: 45px;
                 padding: 0 12px;
                 color: #ffffff;
                 text-align: center;
+                margin: 16px 0px 16px 30px;
                 width: 160px;
-                height: 46px;
                 border-left: 2px solid #eb3c5a;
                 border-right: 2px solid #f67831;
                 background-color: transparent;
                 transition-duration: 1000ms;
-                line-height: 45px;
                 background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
