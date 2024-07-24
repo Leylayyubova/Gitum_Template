@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        loop: true,
     });
 
     var swiper2 = new Swiper(".Personal", {
@@ -16,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+        loop: true,
     });
 });

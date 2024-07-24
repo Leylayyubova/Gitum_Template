@@ -194,6 +194,10 @@ footer .copyright .container .social i {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
+  cursor: pointer;
+}
+footer .copyright .container .social i:hover {
+  background: linear-gradient(to right, #eb3c5a, #f67831);
 }
 
 .hero {
@@ -370,6 +374,7 @@ footer .copyright .container .social i {
   display: flex;
   flex-direction: row;
   padding: 0 20px;
+  margin-bottom: 15px;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide {
   margin-bottom: 30px;
@@ -398,6 +403,22 @@ footer .copyright .container .social i {
 .unlimited .Personal .swiper-wrapper .swiper-slide .text span i {
   color: #e85d39;
   margin-right: 4px;
+}
+.unlimited .Personal .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background: #ccc;
+  opacity: 1;
+  transition: width 0.3s;
+}
+.unlimited .Personal .swiper-pagination-bullet-active {
+  width: 40px;
+  border-radius: 50px;
+  background: #f67831;
+}
+.unlimited .Personal .swiper-pagination .swiper-pagination-bullet:nth-child(n+3) {
+  display: none;
 }
 
 .expert {
@@ -1153,9 +1174,99 @@ footer .copyright .container .social i {
   z-index: -1;
   transition: all 0.5s;
 }
-.timetable .container table tbody tr .hover-bg:hover h6, .timetable .container table tbody tr .hover-bg:hover span, .timetable .container table tbody tr .hover-bg:hover .trainer-name {
+.timetable .container table tbody tr .hover-bg:hover h6,
+.timetable .container table tbody tr .hover-bg:hover span,
+.timetable .container table tbody tr .hover-bg:hover .trainer-name {
   color: #ffffff;
 }
 .timetable .container table tbody tr .hover-bg:hover::after {
   opacity: 1;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.leave {
+  padding: 100px 0;
+}
+.leave .container {
+  display: flex;
+}
+.leave .container .info {
+  padding: 0 15px;
+}
+.leave .container .info h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+}
+.leave .container .info .widget {
+  display: flex;
+  margin-bottom: 16px;
+}
+.leave .container .info .widget .icon {
+  height: 74px;
+  width: 74px;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 74px;
+  margin-right: 28px;
+}
+.leave .container .info .widget .text {
+  padding-top: 12px;
+}
+.leave .container .info .widget .text h5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #bdbdbd;
+  margin-bottom: 5px;
+}
+.leave .container .info .widget .text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #111111;
+  margin: 0 0 15px 0;
+}
+.leave .container form {
+  width: 750px;
+  padding: 0 15px;
+}
+.leave .container form h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+}
+.leave .container form input {
+  width: 357px;
+  height: 51px;
+  border: 1px solid #e1e1e1;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.leave .container form textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #e1e1e1;
+  padding-left: 20px;
+  font-size: 16px;
+  padding-top: 10px;
+  margin-bottom: 42px;
+  resize: none;
+}
+.leave .container form button {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 33px;
+  display: inline-block;
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  border: none;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

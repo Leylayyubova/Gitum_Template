@@ -2,8 +2,8 @@ footer {
     background: #111111;
     padding-top: 60px;
     padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .information {
         .container {
@@ -101,10 +101,12 @@ footer {
             ul {
                 display: flex;
                 margin: 0 33px;
+
                 li {
                     font-size: 16px;
                     margin-right: 25px;
                     line-height: 40px;
+
                     a {
                         color: #ffffff;
                     }
@@ -121,6 +123,11 @@ footer {
                     text-align: center;
                     line-height: 40px;
                     border-radius: 50%;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: linear-gradient(to right, #eb3c5a, #f67831);
+                    }
                 }
             }
         }
