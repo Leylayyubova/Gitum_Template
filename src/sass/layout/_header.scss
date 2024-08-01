@@ -71,14 +71,47 @@
                 width: 160px;
                 border-left: 2px solid #eb3c5a;
                 border-right: 2px solid #f67831;
-                background-color: transparent;
                 transition-duration: 1000ms;
                 background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 2px;
-                
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+                    z-index: -1;
+                    transition: left 1s ease;
+                }
+
+                &:hover::before {
+                    left: 100%;
+                }
+
             }
+
+            .close-menu {
+                display: none;
+            }
+
+            &.active {
+                display: block;
+            }
+
         }
+
+        .menu-toggle {
+            display: none;
+            color: #ffffff;
+        }
+
     }
 }

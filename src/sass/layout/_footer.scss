@@ -1,9 +1,6 @@
 footer {
     background: #111111;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 60px 60px 30px;
 
     .information {
         .container {
@@ -11,8 +8,7 @@ footer {
             justify-content: space-between;
 
             .contact {
-                // padding: 0 15px;
-
+ 
                 span {
                     font-size: 14px;
                     color: #f15d44;
@@ -29,14 +25,15 @@ footer {
 
     .subscribe {
         .container {
-            padding: 0 45px;
-            margin-bottom: 30px;
-            margin-top: 43px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 120px;
+            min-height: 120px;
+            background-repeat: no-repeat;
             background-image: url('https://preview.colorlib.com/theme/gutim/img/footer-signup.jpg.webp');
+            padding: 0 45px;
+            margin-bottom: 30px;
+            margin-top: 43px;
 
             .text {
                 padding: 34px 0 26px;
@@ -81,6 +78,7 @@ footer {
                     right: 0;
                     top: 0;
                     padding: 0 22px;
+                    cursor: pointer;
                 }
             }
         }
@@ -96,6 +94,11 @@ footer {
                 padding-top: 6px;
                 color: #ffffff;
                 margin-right: 25px;
+
+                &:hover {
+                    color: #f15d44;
+                    transition: .3s;
+                }
             }
 
             ul {
@@ -109,6 +112,11 @@ footer {
 
                     a {
                         color: #ffffff;
+
+                        &:hover {
+                            color: #f15d44;
+                            transition: .3s;
+                        }
                     }
                 }
             }

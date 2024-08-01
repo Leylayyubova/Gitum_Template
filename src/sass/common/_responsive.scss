@@ -1,0 +1,762 @@
+@media screen and (max-width:768px) {
+    .gutim {
+        .container {
+            display: flex;
+            margin: 0 4%;
+
+            .logo {
+                margin: 0 5%;
+            }
+
+            .nav-menu {
+                display: none;
+
+                .menu {
+                    display: none;
+                }
+
+                .btn {
+                    display: none;
+                }
+
+            }
+
+            .menu-toggle {
+                display: block;
+                margin-right: 4%;
+                font-size: 22px;
+            }
+
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 40%;
+                background: #fff;
+                padding: 10% 5% 5%;
+                z-index: 1;
+                transition: .4s;
+                box-shadow: 0 1px 23.28px .72px rgba(255, 51, 102, .07);
+
+                .menu {
+                    display: block;
+
+                    li {
+                        margin-bottom: 5%;
+
+                        a {
+                            color: #000;
+
+                        }
+                    }
+                }
+
+                .btn {
+                    display: none;
+                    margin: 35px 0;
+                }
+
+                .close-menu {
+                    position: absolute;
+                    display: block;
+                    top: 22px;
+                    right: 30px;
+                    font-size: 21px;
+                    color: #f15d44;
+                }
+            }
+        }
+
+    }
+
+    .hero {
+        .container {
+            padding-top: 267px;
+
+            .content {
+                padding: 0 62px;
+
+                h1 {
+                    font-size: 30px !important;
+                }
+            }
+        }
+    }
+
+    .story {
+        .container {
+            display: block;
+
+            .video {
+                width: 100%;
+                padding: 0 45px;
+            }
+
+            .content {
+                width: 100%;
+                padding: 10px 45px;
+
+                h2 {
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+
+    .strategies {
+        .container {
+            display: block;
+
+            .image {
+                width: 100%;
+            }
+
+            .boxes {
+                width: 100%;
+                margin-top: -7px;
+
+                .box {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .unlimited {
+        .Personal {
+            .swiper-wrapper {
+                // flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 768px;
+
+                .swiper-slide {
+                    padding: 0 15px;
+                    width: 50% !important;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .text {
+                        // width: 100%;
+                        padding: 10px
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .expert {
+        padding: 0;
+
+        .container {
+            .cards {
+                flex-wrap: wrap;
+
+                .card {
+                    width: 100% !important;
+                    margin-bottom: 30% !important;
+
+                    .text {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .success {
+        .mySwiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    margin: 0;
+
+                    p {
+                        max-width: 670px;
+                    }
+                }
+            }
+        }
+    }
+
+    .trainer {
+        .container {
+            display: block;
+            margin: 0 65px;
+
+            .content {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+
+        }
+    }
+
+    .membership {
+        .container {
+            .boxes {
+                display: block;
+
+                .box {
+                    width: 100%;
+                    margin-bottom: 3%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .register {
+        margin-bottom: 90%;
+        margin-top: 0;
+        padding: 90px 0 100px;
+
+        .container {
+            display: block;
+
+            .content {
+                width: 100%;
+            }
+
+            .img {
+                width: 82%;
+                margin: 0 9%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .latest {
+        .container {
+            .cards {
+
+                .card {
+                    width: 45%;
+                    margin-bottom: 5%;
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .award {
+        .container {
+            display: block;
+            margin: 0 10%;
+
+            .text {
+                width: 100%;
+            }
+
+            img {
+                padding: 0;
+            }
+        }
+    }
+
+    .member {
+        flex-direction: column;
+
+        .bannerone,
+        .bannertwo {
+            width: 100%;
+            padding: 46px 60px 0;
+        }
+    }
+
+    .classes {
+        padding: 0;
+
+        .container {
+            .cards {
+                margin: 0 40px;
+
+                .card {
+                    width: 45%;
+                    margin: 2%;
+                }
+            }
+        }
+    }
+
+    .timetable {
+        .container {
+            margin: 0 7%;
+
+            .table-wrapper {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+
+                table {
+                    min-width: 600px;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        .container {
+            .gallery-filter {
+                width: 100%;
+                padding: 0 !important;
+
+                .gallery-item {
+                    display: block;
+                    flex: 1 1 100%;
+
+                    .galleryone,
+                    .gallerytwo {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .leave {
+        .container {
+            display: block;
+
+            .info {
+                padding: 0 40px;
+            }
+        }
+    }
+
+    footer {
+        .information {
+            .container {
+                display: block;
+
+                .contact {
+                    margin-bottom: 4%;
+                }
+            }
+        }
+
+        .subscribe {
+            .container {
+                overflow: hidden;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+
+                .text {
+                    h4 {
+                        font-size: 18px;
+
+                    }
+                }
+
+                form {
+                    width: 100%;
+
+                    input {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .social {
+                    margin-top: 2%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .gutim {
+        .container {
+            display: flex;
+            margin: 0 4%;
+
+            .logo {
+                margin: 0 5%;
+            }
+
+            .nav-menu {
+                display: none;
+
+                .menu {
+                    display: none;
+                }
+
+                .btn {
+                    display: none;
+                }
+
+            }
+
+            .menu-toggle {
+                display: block;
+                margin-right: 4%;
+                font-size: 22px;
+            }
+        }
+
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            background: #fff;
+            padding: 10% 5% 5%;
+            z-index: 1;
+            transition: .4s;
+            box-shadow: 0 1px 23.28px .72px rgba(255, 51, 102, .07);
+
+            .menu {
+                display: block;
+
+                li {
+                    margin-bottom: 5%;
+
+                    a {
+                        color: #000;
+
+                    }
+                }
+            }
+
+            .btn {
+                display: block;
+                margin: 35px 0;
+            }
+
+            .close-menu {
+                position: absolute;
+                display: block;
+                top: 36px;
+                right: 64px;
+                font-size: 21px;
+                color: #f15d44;
+            }
+        }
+    }
+
+    .hero {
+        .container {
+            padding-top: 267px;
+
+            .content {
+                padding: 0 62px;
+
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    .story {
+        .container {
+            display: block;
+
+            .video {
+                width: 100%;
+                padding: 0 45px;
+            }
+
+            .content {
+                width: 100%;
+                padding: 10px 45px;
+
+                h2 {
+                    font-size: 39px;
+                }
+            }
+        }
+    }
+
+    .strategies {
+        .container {
+            display: block;
+
+            .image {
+                width: 100%;
+            }
+
+            .boxes {
+                width: 100%;
+                margin-top: -7px;
+
+                .box {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .expert {
+        padding: 0;
+
+        .container {
+            .cards {
+                flex-wrap: wrap;
+
+                .card {
+                    width: 46%;
+                    margin-bottom: 10%;
+
+                    .text {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .success {
+        .mySwiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    margin: 0;
+
+                    p {
+                        max-width: 670px;
+                    }
+                }
+            }
+        }
+    }
+
+    .trainer {
+        .container {
+            display: block;
+            margin: 0 65px;
+
+            .content {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+
+        }
+    }
+
+    .membership {
+        .container {
+            padding: 0 15px;
+
+            .boxes {
+                display: block;
+
+                .box {
+                    width: 100%;
+                    margin-bottom: 3%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .register {
+        margin-bottom: 90%;
+        margin-top: 0;
+        padding: 90px 0 100px;
+
+        .container {
+            display: block;
+
+            .content {
+                width: 100%;
+            }
+
+            .img {
+                width: 82%;
+                margin: 0 9%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .latest {
+        .container {
+            .cards {
+
+                .card {
+                    width: 46%;
+                    margin-bottom: 5%;
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .award {
+        .container {
+            display: block;
+            margin: 0 10%;
+
+            .text {
+                width: 100%;
+            }
+
+            img {
+                padding: 0;
+            }
+        }
+    }
+
+    .member {
+        flex-direction: column;
+
+        .bannerone,
+        .bannertwo {
+            width: 100%;
+            padding: 46px 60px 0;
+        }
+    }
+
+    .classes {
+        padding: 4% 0 0;
+
+        .container {
+            .cards {
+                margin: 0 40px;
+
+                .card {
+                    width: 45%;
+                    margin: 2%;
+                }
+            }
+        }
+    }
+
+    .timetable {
+        .container {
+            margin: 0 7%;
+
+            .table-wrapper {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+
+                table {
+                    min-width: 600px;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            .gallery-filter {
+                width: 100%;
+                padding: 0 150px;
+
+                .gallery-item {
+                    display: block;
+                    flex: 1 1 100%;
+
+                    .galleryone,
+                    .gallerytwo {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .leave {
+        .container {
+            display: block;
+
+            .info {
+                padding: 0 40px;
+            }
+        }
+    }
+
+    footer {
+        .information {
+            .container {
+                display: block;
+
+                .contact {
+                    margin-bottom: 4%;
+                }
+            }
+        }
+
+        .subscribe {
+            .container {
+                overflow: hidden;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+
+                .text {
+                    h4 {
+                        font-size: 18px;
+
+                    }
+                }
+
+                form {
+                    input {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .social {
+                    margin-top: 2%;
+                }
+            }
+        }
+    }
+}

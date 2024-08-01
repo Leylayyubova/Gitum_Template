@@ -85,20 +85,43 @@ a {
   width: 160px;
   border-left: 2px solid #eb3c5a;
   border-right: 2px solid #f67831;
-  background-color: transparent;
   transition-duration: 1000ms;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.gutim .container .nav-menu .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.gutim .container .nav-menu .btn:hover::before {
+  left: 100%;
+}
+.gutim .container .nav-menu .close-menu {
+  display: none;
+}
+.gutim .container .nav-menu.active {
+  display: block;
+}
+.gutim .container .menu-toggle {
+  display: none;
+  color: #ffffff;
 }
 
 footer {
   background: #111111;
-  padding-top: 60px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 60px 60px 30px;
 }
 footer .information .container {
   display: flex;
@@ -114,14 +137,15 @@ footer .information .container .contact p {
   margin-top: 15px;
 }
 footer .subscribe .container {
-  padding: 0 45px;
-  margin-bottom: 30px;
-  margin-top: 43px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  min-height: 120px;
+  background-repeat: no-repeat;
   background-image: url("https://preview.colorlib.com/theme/gutim/img/footer-signup.jpg.webp");
+  padding: 0 45px;
+  margin-bottom: 30px;
+  margin-top: 43px;
 }
 footer .subscribe .container .text {
   padding: 34px 0 26px;
@@ -162,6 +186,7 @@ footer .subscribe .container form button {
   right: 0;
   top: 0;
   padding: 0 22px;
+  cursor: pointer;
 }
 footer .copyright .container {
   display: flex;
@@ -172,6 +197,10 @@ footer .copyright .container p {
   padding-top: 6px;
   color: #ffffff;
   margin-right: 25px;
+}
+footer .copyright .container p:hover {
+  color: #f15d44;
+  transition: 0.3s;
 }
 footer .copyright .container ul {
   display: flex;
@@ -184,6 +213,10 @@ footer .copyright .container ul li {
 }
 footer .copyright .container ul li a {
   color: #ffffff;
+}
+footer .copyright .container ul li a:hover {
+  color: #f15d44;
+  transition: 0.3s;
 }
 footer .copyright .container .social i {
   font-size: 16px;
@@ -249,6 +282,22 @@ footer .copyright .container .social i:hover {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   transition-duration: 1000ms;
+  position: relative;
+  z-index: 1;
+}
+.hero .container .content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.hero .container .content a:hover::before {
+  left: 100%;
 }
 
 .story {
@@ -260,9 +309,10 @@ footer .copyright .container .social i:hover {
 .story .container .video {
   position: relative;
   padding: 0 15px;
+  width: 50%;
 }
 .story .container .video img {
-  max-width: 555px;
+  width: 100%;
 }
 .story .container .video a {
   position: absolute;
@@ -272,6 +322,7 @@ footer .copyright .container .social i:hover {
 }
 .story .container .content {
   padding: 15px 0 0 55px;
+  width: 50%;
 }
 .story .container .content h2 {
   font-size: 40px;
@@ -293,10 +344,10 @@ footer .copyright .container .social i:hover {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
-  text-align: center;
   line-height: 45px;
+  text-align: center;
   padding: 0 12px;
+  color: #ffffff;
   width: 160px;
   height: 46px;
   border-left: 2px solid #eb3c5a;
@@ -305,6 +356,22 @@ footer .copyright .container .social i:hover {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   transition-duration: 1000ms;
+  position: relative;
+  z-index: 1;
+}
+.story .container .content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.story .container .content a:hover::before {
+  left: 100%;
 }
 .story .container .content img {
   margin-bottom: 20px;
@@ -324,8 +391,7 @@ footer .copyright .container .social i:hover {
   max-width: 1423px;
 }
 .strategies .container .image {
-  height: 660px;
-  width: 711px;
+  width: 50%;
 }
 .strategies .container .image img {
   width: 100%;
@@ -361,6 +427,7 @@ footer .copyright .container .social i:hover {
 }
 .unlimited .Personal {
   max-width: 1170px;
+  margin: 0 auto;
 }
 .unlimited .Personal h2 {
   font-size: 40px;
@@ -377,19 +444,23 @@ footer .copyright .container .social i:hover {
   margin-bottom: 15px;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide {
+  position: relative !important;
   margin-bottom: 30px;
   margin-top: 0 !important;
+  width: 33%;
+  overflow: hidden;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide img {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide .text {
   position: absolute;
-  left: 0;
   bottom: 6px;
   width: 95%;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 0 15px 30px;
+  box-sizing: border-box;
 }
 .unlimited .Personal .swiper-wrapper .swiper-slide .text h4 {
   font-size: 22px;
@@ -444,20 +515,23 @@ footer .copyright .container .social i:hover {
   width: 33%;
   margin: 0 15px;
 }
+.expert .container .cards .card img {
+  width: 100%;
+}
 .expert .container .cards .card .text {
   position: absolute;
   left: 50%;
   bottom: -55px;
   text-align: center;
   background: #ffffff;
-  width: 310px;
+  width: 83%;
   height: 90px;
   padding: 20px 30px 18px;
   margin: 0 auto;
   transition: all 0.5s;
   overflow: hidden;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
-  transform: translateX(-155px);
+  transform: translateX(-50%);
   transform-origin: bottom center;
 }
 .expert .container .cards .card .text h5 {
@@ -500,6 +574,10 @@ footer .copyright .container .social i:hover {
 .expert .container .cards .card:hover .text .social {
   opacity: 1;
   visibility: visible;
+}
+.expert .container .cards .card:hover .text .social i:hover {
+  color: #eb3c5a;
+  transition: 0.2s;
 }
 
 .success {
@@ -615,13 +693,14 @@ footer .copyright .container .social i:hover {
   color: #ffffff;
   margin-bottom: 50px;
 }
-.trainer .container .content button {
+.trainer .container .content a {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
+  line-height: 45px;
+  text-align: center;
   padding: 0 12px;
   color: #ffffff;
-  text-align: center;
   width: 160px;
   height: 46px;
   border-left: 2px solid #eb3c5a;
@@ -630,13 +709,29 @@ footer .copyright .container .social i:hover {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
   transition-duration: 1000ms;
-  line-height: 45px;
-  cursor: pointer;
-  border: none;
+  position: relative;
+  z-index: 1;
+}
+.trainer .container .content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.trainer .container .content a:hover::before {
+  left: 100%;
 }
 .trainer .container .img {
   width: 50%;
   padding: 0 15px;
+}
+.trainer .container .img img {
+  width: 100%;
 }
 
 .membership {
@@ -755,7 +850,7 @@ footer .copyright .container .social i:hover {
 
 .register {
   background: #f5f4f4;
-  padding: 235px 0 100px;
+  padding: 100px 0 100px;
 }
 .register .container {
   display: flex;
@@ -817,12 +912,28 @@ footer .copyright .container .social i:hover {
   margin-top: 30px;
   cursor: pointer;
   width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.register .container .content form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.register .container .content form button:hover::before {
+  left: 100%;
 }
 .register .container .img {
   width: 33%;
 }
 .register .container .img img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -842,14 +953,16 @@ footer .copyright .container .social i:hover {
 }
 .latest .container .cards {
   display: flex;
+  flex-wrap: wrap;
 }
 .latest .container .cards .card {
-  width: 33.333%;
+  width: 30.333%;
   margin: 0 15px;
 }
 .latest .container .cards .card img {
-  max-width: 360px;
+  width: 100%;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .latest .container .cards .card p {
   font-size: 14px;
@@ -869,6 +982,10 @@ footer .copyright .container .social i:hover {
   color: #111111;
   line-height: 30px;
   margin-top: 10px;
+}
+.latest .container .cards .card a:hover {
+  color: #f15d44;
+  transition: 0.3s;
 }
 
 .about {
@@ -908,6 +1025,11 @@ footer .copyright .container .social i:hover {
 }
 .counter .container .count {
   margin-right: 180px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.counter .container .count:hover {
+  transform: scale(1.1);
 }
 .counter .container .count h2 {
   font-size: 72px;
@@ -955,6 +1077,7 @@ footer .copyright .container .social i:hover {
 
 .member {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1423px;
 }
 .member .bannerone {
@@ -1013,6 +1136,24 @@ footer .copyright .container .social i:hover {
   border-left: 2px solid #eb3c5a;
   border-right: 2px solid #f67831;
   background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  position: relative;
+  z-index: 1;
+}
+.member .bannerone a::before,
+.member .bannertwo a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.member .bannerone a:hover::before,
+.member .bannertwo a:hover::before {
+  left: 100%;
 }
 .member .bannerone::after,
 .member .bannertwo::after {
@@ -1020,7 +1161,7 @@ footer .copyright .container .social i:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 520px;
+  max-width: 520px;
   height: 310px;
   border: 18px solid rgba(255, 255, 255, 0.1);
   transform: translate(-260px, -155px);
@@ -1042,16 +1183,24 @@ footer .copyright .container .social i:hover {
   flex-wrap: wrap;
 }
 .classes .container .cards .card {
-  width: 33.3333%;
+  width: 31%;
+  margin: 0 1%;
   position: relative;
-  height: 255px;
   margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.classes .container .cards .card img {
+  width: 100%;
+}
+.classes .container .cards .card:hover {
+  transform: translateY(-20px);
 }
 .classes .container .cards .card .text {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 95%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 0 30px 15px;
 }
@@ -1098,7 +1247,7 @@ footer .copyright .container .social i:hover {
 .timetable .container ul li.active {
   color: #f15d44;
 }
-.timetable .container table {
+.timetable .container .table-wrapper table {
   width: 100%;
   text-align: center;
   border: 1px solid #e1e1e1;
@@ -1106,30 +1255,30 @@ footer .copyright .container .social i:hover {
   padding: 0 15px;
   display: none;
 }
-.timetable .container table.active {
+.timetable .container .table-wrapper table.active {
   display: table;
 }
-.timetable .container table thead {
+.timetable .container .table-wrapper table thead {
   border-collapse: collapse;
 }
-.timetable .container table thead tr {
+.timetable .container .table-wrapper table thead tr {
   background: #f0f0f0;
 }
-.timetable .container table thead tr th {
+.timetable .container .table-wrapper table thead tr th {
   font-size: 16px;
   color: #000000;
   font-weight: 600;
   text-transform: uppercase;
   padding: 25px 0;
 }
-.timetable .container table tbody {
+.timetable .container .table-wrapper table tbody {
   border-collapse: collapse;
 }
-.timetable .container table tbody tr {
+.timetable .container .table-wrapper table tbody tr {
   text-align: center;
   border: 1px solid #e1e1e1;
 }
-.timetable .container table tbody tr td {
+.timetable .container .table-wrapper table tbody tr td {
   font-size: 16px;
   color: #000000;
   font-weight: 600;
@@ -1143,26 +1292,26 @@ footer .copyright .container .social i:hover {
   height: 107px;
   transition: all 0.4s;
 }
-.timetable .container table tbody tr td h6 {
+.timetable .container .table-wrapper table tbody tr td h6 {
   font-size: 16px;
   font-weight: 600;
   color: #f15d44;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-.timetable .container table tbody tr td span {
+.timetable .container .table-wrapper table tbody tr td span {
   font-size: 14px;
   font-weight: 600;
   color: #111111;
 }
-.timetable .container table tbody tr td .trainer-name {
+.timetable .container .table-wrapper table tbody tr td .trainer-name {
   font-size: 12px;
   color: #6b6b6b;
 }
-.timetable .container table tbody tr .hover-bg {
+.timetable .container .table-wrapper table tbody tr .hover-bg {
   position: relative;
 }
-.timetable .container table tbody tr .hover-bg::after {
+.timetable .container .table-wrapper table tbody tr .hover-bg::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1174,17 +1323,33 @@ footer .copyright .container .social i:hover {
   z-index: -1;
   transition: all 0.5s;
 }
-.timetable .container table tbody tr .hover-bg:hover h6,
-.timetable .container table tbody tr .hover-bg:hover span,
-.timetable .container table tbody tr .hover-bg:hover .trainer-name {
+.timetable .container .table-wrapper table tbody tr .hover-bg:hover h6,
+.timetable .container .table-wrapper table tbody tr .hover-bg:hover span,
+.timetable .container .table-wrapper table tbody tr .hover-bg:hover .trainer-name {
   color: #ffffff;
 }
-.timetable .container table tbody tr .hover-bg:hover::after {
+.timetable .container .table-wrapper table tbody tr .hover-bg:hover::after {
   opacity: 1;
 }
 
+.map {
+  position: relative;
+  overflow: hidden;
+}
 .map iframe {
   width: 100%;
+  height: 612px;
+  filter: blur(2px) brightness(80%);
+  transition: filter 0.3s ease;
+}
+.map:hover iframe {
+  filter: blur(0px);
+}
+.map img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-14px, -21px);
 }
 
 .leave {
@@ -1212,9 +1377,19 @@ footer .copyright .container .social i:hover {
   width: 74px;
   border: 1px solid #ebebeb;
   border-radius: 50%;
-  text-align: center;
-  line-height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 28px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.leave .container .info .widget .icon img {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.leave .container .info .widget .icon:hover img {
+  transform: scale(1.1);
 }
 .leave .container .info .widget .text {
   padding-top: 12px;
@@ -1232,9 +1407,14 @@ footer .copyright .container .social i:hover {
   color: #111111;
   margin: 0 0 15px 0;
 }
+.leave .container .info .widget .text p:hover {
+  color: #eb3c5a;
+  transition: 0.3s;
+}
 .leave .container form {
-  width: 750px;
-  padding: 0 15px;
+  max-width: 780px;
+  width: 100%;
+  padding: 0 40px;
 }
 .leave .container form h4 {
   font-size: 24px;
@@ -1243,13 +1423,18 @@ footer .copyright .container .social i:hover {
   text-transform: uppercase;
   margin-bottom: 47px;
 }
-.leave .container form input {
-  width: 357px;
+.leave .container form div {
+  display: flex;
+  justify-content: space-between;
+}
+.leave .container form div input {
+  width: 48%;
   height: 51px;
   border: 1px solid #e1e1e1;
   padding-left: 20px;
   font-size: 16px;
   margin-bottom: 30px;
+  outline: none;
 }
 .leave .container form textarea {
   width: 100%;
@@ -1260,6 +1445,7 @@ footer .copyright .container .social i:hover {
   padding-top: 10px;
   margin-bottom: 42px;
   resize: none;
+  outline: none;
 }
 .leave .container form button {
   font-size: 14px;
@@ -1269,4 +1455,580 @@ footer .copyright .container .social i:hover {
   background: linear-gradient(to right, #eb3c5a, #f67831);
   border: none;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.leave .container form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+  z-index: -1;
+  transition: left 1s ease;
+}
+.leave .container form button:hover::before {
+  left: 100%;
+}
+
+.gallery {
+  padding: 100px 0 70px;
+}
+.gallery .container .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+.gallery .container .menu li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  text-transform: uppercase;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.gallery .container .menu li.active {
+  color: #f15d44;
+}
+.gallery .container .gallery-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .container .gallery-filter .gallery-item {
+  display: flex;
+}
+.gallery .container .gallery-filter .gallery-item img {
+  width: 100%;
+  max-width: 537px;
+}
+.gallery .container .gallery-filter .gallery-item .galleryone {
+  padding: 0 15px;
+}
+.gallery .container .gallery-filter .gallery-item .gallerytwo {
+  padding: 0 15px;
+}
+.gallery .container .gallery-filter .gallery-item .gallerytwo .gallery-items {
+  margin-bottom: 38px;
+}
+.gallery .container .gallery-filter img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .gutim .container {
+    display: flex;
+    margin: 0 4%;
+  }
+  .gutim .container .logo {
+    margin: 0 5%;
+  }
+  .gutim .container .nav-menu {
+    display: none;
+  }
+  .gutim .container .nav-menu .menu {
+    display: none;
+  }
+  .gutim .container .nav-menu .btn {
+    display: none;
+  }
+  .gutim .container .menu-toggle {
+    display: block;
+    margin-right: 4%;
+    font-size: 22px;
+  }
+  .gutim .container .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background: #fff;
+    padding: 10% 5% 5%;
+    z-index: 1;
+    transition: 0.4s;
+    box-shadow: 0 1px 23.28px 0.72px rgba(255, 51, 102, 0.07);
+  }
+  .gutim .container .nav-menu.active .menu {
+    display: block;
+  }
+  .gutim .container .nav-menu.active .menu li {
+    margin-bottom: 5%;
+  }
+  .gutim .container .nav-menu.active .menu li a {
+    color: #000;
+  }
+  .gutim .container .nav-menu.active .btn {
+    display: none;
+    margin: 35px 0;
+  }
+  .gutim .container .nav-menu.active .close-menu {
+    position: absolute;
+    display: block;
+    top: 22px;
+    right: 30px;
+    font-size: 21px;
+    color: #f15d44;
+  }
+  .hero .container {
+    padding-top: 267px;
+  }
+  .hero .container .content {
+    padding: 0 62px;
+  }
+  .hero .container .content h1 {
+    font-size: 30px !important;
+  }
+  .story .container {
+    display: block;
+  }
+  .story .container .video {
+    width: 100%;
+    padding: 0 45px;
+  }
+  .story .container .content {
+    width: 100%;
+    padding: 10px 45px;
+  }
+  .story .container .content h2 {
+    font-size: 39px;
+  }
+  .strategies .container {
+    display: block;
+  }
+  .strategies .container .image {
+    width: 100%;
+  }
+  .strategies .container .boxes {
+    width: 100%;
+    margin-top: -7px;
+  }
+  .strategies .container .boxes .box {
+    width: 100%;
+  }
+  .unlimited .Personal .swiper-wrapper {
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  .unlimited .Personal .swiper-wrapper .swiper-slide {
+    padding: 0 15px;
+    width: 50% !important;
+    box-sizing: border-box;
+  }
+  .unlimited .Personal .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  .unlimited .Personal .swiper-wrapper .swiper-slide .text {
+    padding: 10px;
+  }
+  .expert {
+    padding: 0;
+  }
+  .expert .container .cards {
+    flex-wrap: wrap;
+  }
+  .expert .container .cards .card {
+    width: 100% !important;
+    margin-bottom: 30% !important;
+  }
+  .expert .container .cards .card .text {
+    width: 90%;
+  }
+  .success .mySwiper .swiper-wrapper .swiper-slide {
+    margin: 0;
+  }
+  .success .mySwiper .swiper-wrapper .swiper-slide p {
+    max-width: 670px;
+  }
+  .trainer .container {
+    display: block;
+    margin: 0 65px;
+  }
+  .trainer .container .content {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .membership .container .boxes {
+    display: block;
+  }
+  .membership .container .boxes .box {
+    width: 100%;
+    margin-bottom: 3%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .register {
+    margin-bottom: 90%;
+    margin-top: 0;
+    padding: 90px 0 100px;
+  }
+  .register .container {
+    display: block;
+  }
+  .register .container .content {
+    width: 100%;
+  }
+  .register .container .img {
+    width: 82%;
+    margin: 0 9%;
+  }
+  .register .container .img img {
+    width: 100%;
+  }
+  .latest .container .cards .card {
+    width: 45%;
+    margin-bottom: 5%;
+  }
+  .latest .container .cards .card a {
+    font-size: 18px;
+  }
+  .award .container {
+    display: block;
+    margin: 0 10%;
+  }
+  .award .container .text {
+    width: 100%;
+  }
+  .award .container img {
+    padding: 0;
+  }
+  .member {
+    flex-direction: column;
+  }
+  .member .bannerone,
+  .member .bannertwo {
+    width: 100%;
+    padding: 46px 60px 0;
+  }
+  .classes {
+    padding: 0;
+  }
+  .classes .container .cards {
+    margin: 0 40px;
+  }
+  .classes .container .cards .card {
+    width: 45%;
+    margin: 2%;
+  }
+  .timetable .container {
+    margin: 0 7%;
+  }
+  .timetable .container .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .timetable .container .table-wrapper table {
+    min-width: 600px;
+  }
+  .gallery .container .gallery-filter {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .gallery .container .gallery-filter .gallery-item {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .gallery .container .gallery-filter .gallery-item .galleryone,
+  .gallery .container .gallery-filter .gallery-item .gallerytwo {
+    width: 100%;
+  }
+  .gallery .container .gallery-filter .gallery-item .galleryone img,
+  .gallery .container .gallery-filter .gallery-item .gallerytwo img {
+    width: 100%;
+  }
+  .leave .container {
+    display: block;
+  }
+  .leave .container .info {
+    padding: 0 40px;
+  }
+  footer .information .container {
+    display: block;
+  }
+  footer .information .container .contact {
+    margin-bottom: 4%;
+  }
+  footer .subscribe .container {
+    overflow: hidden;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  footer .subscribe .container .text h4 {
+    font-size: 18px;
+  }
+  footer .subscribe .container form {
+    width: 100%;
+  }
+  footer .subscribe .container form input {
+    padding-left: 0;
+  }
+  footer .copyright .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .copyright .container .social {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gutim .container {
+    display: flex;
+    margin: 0 4%;
+  }
+  .gutim .container .logo {
+    margin: 0 5%;
+  }
+  .gutim .container .nav-menu {
+    display: none;
+  }
+  .gutim .container .nav-menu .menu {
+    display: none;
+  }
+  .gutim .container .nav-menu .btn {
+    display: none;
+  }
+  .gutim .container .menu-toggle {
+    display: block;
+    margin-right: 4%;
+    font-size: 22px;
+  }
+  .gutim .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background: #fff;
+    padding: 10% 5% 5%;
+    z-index: 1;
+    transition: 0.4s;
+    box-shadow: 0 1px 23.28px 0.72px rgba(255, 51, 102, 0.07);
+  }
+  .gutim .nav-menu.active .menu {
+    display: block;
+  }
+  .gutim .nav-menu.active .menu li {
+    margin-bottom: 5%;
+  }
+  .gutim .nav-menu.active .menu li a {
+    color: #000;
+  }
+  .gutim .nav-menu.active .btn {
+    display: block;
+    margin: 35px 0;
+  }
+  .gutim .nav-menu.active .close-menu {
+    position: absolute;
+    display: block;
+    top: 36px;
+    right: 64px;
+    font-size: 21px;
+    color: #f15d44;
+  }
+  .hero .container {
+    padding-top: 267px;
+  }
+  .hero .container .content {
+    padding: 0 62px;
+  }
+  .hero .container .content h1 {
+    font-size: 60px;
+  }
+  .story .container {
+    display: block;
+  }
+  .story .container .video {
+    width: 100%;
+    padding: 0 45px;
+  }
+  .story .container .content {
+    width: 100%;
+    padding: 10px 45px;
+  }
+  .story .container .content h2 {
+    font-size: 39px;
+  }
+  .strategies .container {
+    display: block;
+  }
+  .strategies .container .image {
+    width: 100%;
+  }
+  .strategies .container .boxes {
+    width: 100%;
+    margin-top: -7px;
+  }
+  .strategies .container .boxes .box {
+    width: 100%;
+  }
+  .expert {
+    padding: 0;
+  }
+  .expert .container .cards {
+    flex-wrap: wrap;
+  }
+  .expert .container .cards .card {
+    width: 46%;
+    margin-bottom: 10%;
+  }
+  .expert .container .cards .card .text {
+    width: 90%;
+  }
+  .success .mySwiper .swiper-wrapper .swiper-slide {
+    margin: 0;
+  }
+  .success .mySwiper .swiper-wrapper .swiper-slide p {
+    max-width: 670px;
+  }
+  .trainer .container {
+    display: block;
+    margin: 0 65px;
+  }
+  .trainer .container .content {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .membership .container {
+    padding: 0 15px;
+  }
+  .membership .container .boxes {
+    display: block;
+  }
+  .membership .container .boxes .box {
+    width: 100%;
+    margin-bottom: 3%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .register {
+    margin-bottom: 90%;
+    margin-top: 0;
+    padding: 90px 0 100px;
+  }
+  .register .container {
+    display: block;
+  }
+  .register .container .content {
+    width: 100%;
+  }
+  .register .container .img {
+    width: 82%;
+    margin: 0 9%;
+  }
+  .register .container .img img {
+    width: 100%;
+  }
+  .latest .container .cards .card {
+    width: 46%;
+    margin-bottom: 5%;
+  }
+  .latest .container .cards .card a {
+    font-size: 18px;
+  }
+  .award .container {
+    display: block;
+    margin: 0 10%;
+  }
+  .award .container .text {
+    width: 100%;
+  }
+  .award .container img {
+    padding: 0;
+  }
+  .member {
+    flex-direction: column;
+  }
+  .member .bannerone,
+  .member .bannertwo {
+    width: 100%;
+    padding: 46px 60px 0;
+  }
+  .classes {
+    padding: 4% 0 0;
+  }
+  .classes .container .cards {
+    margin: 0 40px;
+  }
+  .classes .container .cards .card {
+    width: 45%;
+    margin: 2%;
+  }
+  .timetable .container {
+    margin: 0 7%;
+  }
+  .timetable .container .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .timetable .container .table-wrapper table {
+    min-width: 600px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery .container .gallery-filter {
+    width: 100%;
+    padding: 0 150px;
+  }
+  .gallery .container .gallery-filter .gallery-item {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .gallery .container .gallery-filter .gallery-item .galleryone,
+  .gallery .container .gallery-filter .gallery-item .gallerytwo {
+    width: 100%;
+  }
+  .gallery .container .gallery-filter .gallery-item .galleryone img,
+  .gallery .container .gallery-filter .gallery-item .gallerytwo img {
+    width: 100%;
+  }
+  .leave .container {
+    display: block;
+  }
+  .leave .container .info {
+    padding: 0 40px;
+  }
+  footer .information .container {
+    display: block;
+  }
+  footer .information .container .contact {
+    margin-bottom: 4%;
+  }
+  footer .subscribe .container {
+    overflow: hidden;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  footer .subscribe .container .text h4 {
+    font-size: 18px;
+  }
+  footer .subscribe .container form input {
+    padding-left: 0;
+  }
+  footer .copyright .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .copyright .container .social {
+    margin-top: 2%;
+  }
 }/*# sourceMappingURL=style.css.map */

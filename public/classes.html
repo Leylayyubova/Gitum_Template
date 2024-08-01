@@ -28,11 +28,13 @@
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./classes.html">Classes</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="">Gallery</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./contact.html">Contacts</a></li>
                 </ul>
-                <a class="btn">Sign Up Today</a>
+                <a href="" class="btn">Sign Up Today</a>
+                <i class="fa-solid fa-xmark close-menu"></i>
             </div>
+            <i class="fa-solid fa-bars menu-toggle"></i>
         </div>
     </header>
     <main>
@@ -147,1093 +149,1095 @@
             <div class="container">
                 <h2>Class Timetable</h2>
                 <ul>
-                    <li class="active" data-tsfilter="all">All Class</li>
-                    <li data-tsfilter="gym">Gym</li>
-                    <li data-tsfilter="crossfit">Crossfit</li>
-                    <li data-tsfilter="cardio">Cardio</li>
-                    <li data-tsfilter="body">Body</li>
-                    <li data-tsfilter="yoga">Yoga</li>
+                    <li class="active" filter="all">All Class</li>
+                    <li filter="gym">Gym</li>
+                    <li filter="crossfit">Crossfit</li>
+                    <li filter="cardio">Cardio</li>
+                    <li filter="body">Body</li>
+                    <li filter="yoga">Yoga</li>
                 </ul>
-                <table class="active" data-tsfilter="all">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="workout-time">10.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">14.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Running</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>14.00 - 15.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">16.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 19.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">18.00</td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>18.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>18.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">20.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>20.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>20.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table data-tsfilter="gym">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="workout-time">10.00</td>
-                            <td class="hover-bg ts-item show" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">14.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Running</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>14.00 - 15.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">16.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 19.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">18.00</td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>18.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>18.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">20.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>20.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>20.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table data-tsfilter="crossfit">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="workout-time">10.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">14.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Running</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>14.00 - 15.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">16.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 19.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">18.00</td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>18.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>18.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">20.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>20.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>20.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table data-tsfilter="cardio">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="workout-time">10.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">14.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Running</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>14.00 - 15.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">16.00</td>
-                            <td class="hover-bg ts-item show" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 19.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">18.00</td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>18.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>18.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">20.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>20.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>20.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table data-tsfilter="body">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="workout-time">10.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">14.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Running</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>14.00 - 15.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">16.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 19.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">18.00</td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item show" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>18.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>18.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">20.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>20.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item show" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>20.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table data-tsfilter="yoga">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="workout-time">10.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>10.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>10.00 - 11.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">14.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Running</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>14.00 - 15.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>14.00 - 16.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">16.00</td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 19.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item show" data-tsmeta="yoga">
-                                <h6>Yoga</h6>
-                                <span>16.00 - 18.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>16.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">18.00</td>
-                            <td class="hover-bg ts-item">
-                                <h6>Box</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>18.00 - 20.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>18.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>18.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="workout-time">20.00</td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="gym">
-                                <h6>Gym</h6>
-                                <span>20.00 - 12.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td class="hover-bg ts-item" data-tsmeta="body">
-                                <h6>Body</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="cardio">
-                                <h6>Cardio</h6>
-                                <span>20.00 - 22.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
-                                <h6>Crossfit</h6>
-                                <span>20.00 - 21.00</span>
-                                <div class="trainer-name">
-                                    John Smith
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <table class="active" filter="all">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Running</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>14.00 - 15.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 19.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>18.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>18.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>20.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>20.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table filter="gym">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg item show" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Running</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>14.00 - 15.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 19.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>18.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>18.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>20.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>20.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table filter="crossfit">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Running</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>14.00 - 15.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 19.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>18.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>18.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>20.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>20.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table filter="cardio">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Running</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>14.00 - 15.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg item show" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 19.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>18.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>18.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>20.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>20.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table filter="body">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="body">
+                                    <h6>Body</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Running</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>14.00 - 15.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 19.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item show" meta="body">
+                                    <h6>Body</h6>
+                                    <span>18.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>18.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>20.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item show" meta="body">
+                                    <h6>Body</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>20.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table filter="yoga">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>10.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>10.00 - 11.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Running</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>14.00 - 15.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>14.00 - 16.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 19.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item show" meta="yoga">
+                                    <h6>Yoga</h6>
+                                    <span>16.00 - 18.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>16.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg item">
+                                    <h6>Box</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>18.00 - 20.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>18.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>18.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td></td>
+                                <td class="hover-bg item" meta="gym">
+                                    <h6>Gym</h6>
+                                    <span>20.00 - 12.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td class="hover-bg item" meta="body">
+                                    <h6>Body</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="cardio">
+                                    <h6>Cardio</h6>
+                                    <span>20.00 - 22.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg item" meta="crossfit">
+                                    <h6>Crossfit</h6>
+                                    <span>20.00 - 21.00</span>
+                                    <div class="trainer-name">
+                                        John Smith
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>          
             </div>
         </section>
         <section class="member">
@@ -1298,7 +1302,8 @@
             </div>
         </section>
     </footer>
-    <script src="../src/js/script.js"></script>
+    <script src="../src/js/menu.js"></script>
+    <script src="../src/js/swiper.js"></script>
     <script src="../src/js/table.js"></script>
 </body>
 
